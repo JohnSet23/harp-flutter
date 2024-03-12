@@ -44,7 +44,7 @@ Feel free to explore and modify the codebase according to your preferences. Plea
 
 ## Download
 
-You can download and test Harp Music Streaming App APK [here](https://example.com/path/to/your/apk/file.apk).
+You can download and test Harp Music Streaming App APK [here](https://link.storjshare.io/s/jxrlzsjdhvztpuqbensjnqyg3zfq/musicapp%2FHarp%20Apk%2Fharp.apk).
 
 ## Acknowledgements
 
