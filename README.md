@@ -42,6 +42,10 @@ To get started with this project, follow these steps:
 
 Feel free to explore and modify the codebase according to your preferences. Please note that this project is for educational and personal use only and should not be used for commercial purposes without proper authorization.
 
+## Download
+
+You can download and test Harp Music Streaming App APK [here](https://example.com/path/to/your/apk/file.apk).
+
 ## Acknowledgements
 
 - The `just_audio` dependency library for audio playback.
