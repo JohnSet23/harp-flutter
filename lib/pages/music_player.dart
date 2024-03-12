@@ -52,10 +52,25 @@ class _MusicPlayerPageState extends State<MusicPlayerPage>
   List<Song> _songList = [];
 
   Future<void> _initSongList() async {
+    
+     _songList = widget.songList;
+
+       setState(() {
+        //Song Info
+        _songTitle = _songList[widget.index].title;
+       if(_songList[widget.index].album !=null)  _songCoverSorce = _songList[widget.index].album!.coverUrl;
+
+       _songArtist = _songList[widget.index].artist.name ;
+     if(_songList[widget.index].album !=null)    _albumName = _songList[widget.index].album!.name;
+        _songLyrics = _songList[widget.index].lyric ?? "";
+        _featuredArtist = _songList[widget.index].featuredArtists ?? "";
+        _translationTitle = _songList[widget.index].translationTitle ?? "";
+      });
     final session = await AudioSession.instance;
     await session.configure(const AudioSessionConfiguration.speech());
 
-    _songList = widget.songList;
+  
+
 
     try {
       await _setAudioSourceForPlayer();
@@ -104,7 +119,7 @@ class _MusicPlayerPageState extends State<MusicPlayerPage>
         _index = event.currentIndex;
         _playlistIndexNotifier.value = event.currentIndex;
       });
-      // setSongInfo();
+  
     }
   }
 
