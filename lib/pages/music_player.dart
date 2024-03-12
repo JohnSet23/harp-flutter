@@ -66,11 +66,10 @@ class _MusicPlayerPageState extends State<MusicPlayerPage>
         _featuredArtist = _songList[widget.index].featuredArtists ?? "";
         _translationTitle = _songList[widget.index].translationTitle ?? "";
       });
+
+   
     final session = await AudioSession.instance;
     await session.configure(const AudioSessionConfiguration.speech());
-
-  
-
 
     try {
       await _setAudioSourceForPlayer();
