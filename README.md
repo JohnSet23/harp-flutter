@@ -49,7 +49,6 @@ You can download and test Harp Music Streaming App APK [here](https://link.storj
 ## Acknowledgements
 
 - The `just_audio` dependency library for audio playback.
-- [Add any other acknowledgements or credits here if applicable]
 
 ## License
 
